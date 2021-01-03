@@ -26,8 +26,9 @@ class _HomeScreenState extends State<HomeScreen> {
       transform: Matrix4.translationValues(xOffset, yOffset, zOffset)..scale(scaleFactor),
       duration: Duration(milliseconds: 250),
       decoration: BoxDecoration(
-          color: Colors.grey[200],
-          borderRadius: BorderRadius.circular(isDrawerOpen ? 40 : 30.0)),
+          color: purpleTheme,
+          boxShadow: shadowList,
+          borderRadius: BorderRadius.circular(isDrawerOpen ? 60 : 0.0)),
       child: SingleChildScrollView(
         child: Container(
 
@@ -60,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             onPressed: () {
                               setState(() {
                                 xOffset = 180;
-                                yOffset = 70;
+                                yOffset = 140;
                                 zOffset = 0;
                                 scaleFactor = 0.8;
                                 isDrawerOpen = true;
@@ -273,16 +274,21 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           shrinkWrap: true,
-                          itemCount: 8,
+                          itemCount: 10,
                           itemBuilder: (context,i){
                             return Container(
                               margin: EdgeInsets.symmetric(horizontal: 10),
                               height: MediaQuery.of(context).size.height/6,
                               width: MediaQuery.of(context).size.width/4,
-                              decoration: BoxDecoration(color: Colors.blueGrey, boxShadow: shadowList, borderRadius: BorderRadius.circular(20),),
-                              child: Stack(children: [
-
-                              ],),
+                              decoration: BoxDecoration(color: purpleTheme, borderRadius: BorderRadius.circular(20),),
+                              child: Card(
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20)
+                                ),
+                                elevation: 8,
+                                color: Colors.black12,
+                                child: Image.asset(trends[i]["iconPath"]),
+                              ),
                             );
                           }
                       ),
@@ -307,9 +313,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 height: MediaQuery.of(context).size.height/3,
                 width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
-                  boxShadow: shadowList
-                ),
+
                 child: Column(
                   children: [
                     SizedBox(
@@ -324,12 +328,23 @@ class _HomeScreenState extends State<HomeScreen> {
                             return Container(
                               margin: EdgeInsets.symmetric(horizontal: 10),
                               height: MediaQuery.of(context).size.height,
-                              width: MediaQuery.of(context).size.width/2,
-                              decoration: BoxDecoration(color: Colors.grey[300], boxShadow: shadowList, borderRadius: BorderRadius.circular(20),),
-                              child: Stack(children: [
-                                Image.asset(favourites[i]['iconPath'])
+                              decoration: BoxDecoration(
+                                 borderRadius: BorderRadius.circular(20),),
+                              child: GestureDetector(
+                                onTap: (){
 
-                              ],),
+                                },
+                                child: Card(
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(20)
+                                    ),
+                                    elevation: 10,
+                                    shadowColor: Colors.black54,
+                                    color: Colors.black12,
+
+                                  child: Image.asset(favourites[i]['iconPath'])
+                                ),
+                              ),
                             );
                           }
                       ),
