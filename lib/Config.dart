@@ -7,14 +7,22 @@ List<BoxShadow> shadowList = [
   BoxShadow(color: Colors.grey[300], blurRadius: 30, offset: Offset(0, 10))
 ];
 
-List<Map> categories = [
-  {'name': 'Cats', 'iconPath': 'images/cat.png'},
-  {'name': 'Dogs', 'iconPath': 'images/dog.png'},
-  {'name': 'Bunnies', 'iconPath': 'images/rabbit.png'},
-  {'name': 'Parrots', 'iconPath': 'images/parrot.png'},
-  {'name': 'Horses', 'iconPath': 'images/horse.png'}
+List<Map> favourites = [
+  {'name': 'Cats', 'iconPath': 'images/1.png'},
+  {'name': 'Dogs', 'iconPath': 'images/2.png'},
+  {'name': 'Bunnies', 'iconPath': 'images/3.png'},
+  {'name': 'Parrots', 'iconPath': 'images/4.png'},
+  {'name': 'Horses', 'iconPath': 'images/5.png'}
 ];
 
+List<Map> genres = [
+  {'name': 'Rap', 'iconPath': 'images/rap.png'},
+  {'name': 'Country', 'iconPath': 'images/country.png'},
+  {'name': 'EDM', 'iconPath': 'images/electric.png'},
+  {'name': 'Rock', 'iconPath': 'images/rock.png'},
+  {'name': 'Jazz', 'iconPath': 'images/jazz.png'},
+  {'name': 'Rap', 'iconPath': 'images/rap.png'},
+];
 List<Map> drawerItems=[
   {
     'icon': FontAwesomeIcons.paw,

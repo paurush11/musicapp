@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
       duration: Duration(milliseconds: 250),
       decoration: BoxDecoration(
           color: Colors.grey[200],
-          borderRadius: BorderRadius.circular(isDrawerOpen ? 40 : 0.0)),
+          borderRadius: BorderRadius.circular(isDrawerOpen ? 40 : 30.0)),
       child: SingleChildScrollView(
         child: Container(
 
@@ -60,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             onPressed: () {
                               setState(() {
                                 xOffset = 180;
-                                yOffset = 100;
+                                yOffset = 70;
                                 zOffset = 0;
                                 scaleFactor = 0.8;
                                 isDrawerOpen = true;
@@ -209,17 +209,17 @@ class _HomeScreenState extends State<HomeScreen> {
                                           borderRadius: BorderRadius.circular(20)
                                       ),
                                       elevation: 8,
-                                      color: secondaryColor,
+                                      color: Colors.black12,
                                       child: Column(
                                         children: [
                                           SizedBox(
-                                            height: MediaQuery.of(context).size.height/6,
+                                            height: MediaQuery.of(context).size.height/5,
                                             width: MediaQuery.of(context).size.width,
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.all(10.0),
                                             child: Text(
-                                              categories[i]['name'], style: TextStyle(
+                                              genres[i]['name'], style: TextStyle(
                                               fontSize: 40,
                                               color: Colors.white
 
@@ -233,7 +233,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ),
                                   ],
                                 ),
-                                Image.asset(categories[i]['iconPath'], width: 200,height: 100,)
+                                Align(
+                                    child: Image.asset(genres[i]['iconPath'], width: 150,height: 150,),
+                                alignment: Alignment.topCenter,
+                                )
                               ],
 
 
@@ -304,7 +307,9 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 height: MediaQuery.of(context).size.height/3,
                 width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(),
+                decoration: BoxDecoration(
+                  boxShadow: shadowList
+                ),
                 child: Column(
                   children: [
                     SizedBox(
@@ -314,14 +319,15 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           shrinkWrap: true,
-                          itemCount: 8,
+                          itemCount: 5,
                           itemBuilder: (context,i){
                             return Container(
                               margin: EdgeInsets.symmetric(horizontal: 10),
                               height: MediaQuery.of(context).size.height,
                               width: MediaQuery.of(context).size.width/2,
-                              decoration: BoxDecoration(color: Colors.blueGrey, boxShadow: shadowList, borderRadius: BorderRadius.circular(20),),
+                              decoration: BoxDecoration(color: Colors.grey[300], boxShadow: shadowList, borderRadius: BorderRadius.circular(20),),
                               child: Stack(children: [
+                                Image.asset(favourites[i]['iconPath'])
 
                               ],),
                             );
