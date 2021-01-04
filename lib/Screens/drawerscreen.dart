@@ -15,13 +15,35 @@ class _DrawerScreenState extends State<DrawerScreen> {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        color: Color(0xff460A40),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end:
+            Alignment(1.0, 1.0), // 10% of the width, so there are ten blinds.
+            colors: [
+              Color(0xff618FCA),
+              Color(0xFF3A5985),
+              Color(0xff0C4170),
+              Color(0xff051046),
+              Color(0xff141518),
+
+
+
+
+
+            ], // red to yellow
+            tileMode: TileMode.repeated, // repeats the gradient over the canvas
+          ),
+        ),
+
         child: Container(
           margin: EdgeInsets.symmetric(vertical: 40),
           child: Align(
             alignment: Alignment.topCenter,
             child: Text("POTIFY",style: TextStyle(
-              fontSize: 40,
+              color: Colors.white,
+              fontSize: 60,
+              fontFamily: "ShadowsIntoLightTwo",
               fontWeight: FontWeight.bold
             ),),
           ),

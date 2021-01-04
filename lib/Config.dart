@@ -4,6 +4,10 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 Color primaryGreen = Color(0xff416d6d);
 Color secondaryColor = Color(0XFF223E4A);
 Color purpleTheme = Color(0XFFC876FF);
+Color darkBlueTheme = Color(0xff20639B);
+Color lightBlueTheme = Color(0xff3CAEA3);
+Color lighterBlueTheme = Color(0xffAFD1D5);
+
 List<BoxShadow> shadowList = [
   BoxShadow(color: Colors.grey[300], blurRadius: 30, offset: Offset(0, 10))
 ];

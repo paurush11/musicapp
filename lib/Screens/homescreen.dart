@@ -26,7 +26,18 @@ class _HomeScreenState extends State<HomeScreen> {
       transform: Matrix4.translationValues(xOffset, yOffset, zOffset)..scale(scaleFactor),
       duration: Duration(milliseconds: 250),
       decoration: BoxDecoration(
-          color: purpleTheme,
+
+    gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end:
+          Alignment(1.0, 1.0), // 10% of the width, so there are ten blinds.
+          colors: [
+            darkBlueTheme,
+            lightBlueTheme,
+            lighterBlueTheme
+          ], // red to yellow
+          tileMode: TileMode.repeated, // repeats the gradient over the canvas
+        ),
           boxShadow: shadowList,
           borderRadius: BorderRadius.circular(isDrawerOpen ? 60 : 0.0)),
       child: SingleChildScrollView(

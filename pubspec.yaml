@@ -55,6 +55,9 @@ flutter:
           weight: 100
         - asset: fonts/CircularStd-Bold.ttf
           weight: 500
+    - family: ShadowsIntoLightTwo
+      fonts:
+        - asset: fonts/ShadowsIntoLightTwo-Regular.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:
