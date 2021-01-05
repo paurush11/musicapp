@@ -13,11 +13,11 @@ List<BoxShadow> shadowList = [
 ];
 
 List<Map> favourites = [
-  {'name': 'Cats', 'iconPath': 'images/1.png'},
-  {'name': 'Dogs', 'iconPath': 'images/2.png'},
-  {'name': 'Bunnies', 'iconPath': 'images/3.png'},
-  {'name': 'Parrots', 'iconPath': 'images/4.png'},
-  {'name': 'Horses', 'iconPath': 'images/5.png'}
+  {'name': 'MTBMB', 'iconPath': 'images/1.png', 'artist': 'Eminem'},
+  {'name': 'LOUD', 'iconPath': 'images/2.png','artist': 'Rihanna'},
+  {'name': '4:44', 'iconPath': 'images/3.png','artist': 'Jay Z'},
+  {'name': 'DAMN', 'iconPath': 'images/4.png','artist': 'Kendric Lamar'},
+  {'name': 'REPUTATION', 'iconPath': 'images/5.png','artist': 'Taylor Swift'}
 ];
 List<Map> trends = [
   {'name': 'Cats', 'iconPath': 'images/taylor.png'},
