@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
@@ -5,8 +6,14 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../Config.dart';
 
-class TrendingScreen extends StatelessWidget {
+class TrendingScreen extends StatefulWidget {
   static const String id = "Trendingid";
+
+  @override
+  _TrendingScreenState createState() => _TrendingScreenState();
+}
+
+class _TrendingScreenState extends State<TrendingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,7 +75,7 @@ class TrendingScreen extends StatelessWidget {
                       end:
                       Alignment(1.0, 1.0), // 10% of the width, so there are ten blinds.
                       colors: [
-                        Color(0xFF3A5985),
+
                         Color(0xff051046),
                         Color(0xff141518),
 
@@ -194,103 +201,130 @@ class TrendingScreen extends StatelessWidget {
 
               children: [
                 Spacer(),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: InkWell(
-                      hoverColor: Color.alphaBlend( Color(0xFF3A5985),Color(0xff051046)),
-                      focusColor: Colors.green,
-                      onTap: (){
-                        print('You tapped on RaisedButton');
-                      },
-                      child: Row(
-                        children: [
-                          Text("1", style: TextStyle(
-                              color: Colors.white54,
-                              fontSize: 30
-                          ),),
-                          SizedBox(width: 20,),
-                          Text("Billboards Hot 100",style: TextStyle(
-                              color: Colors.white54,
-                              fontSize: 30
-                          ),)
-                        ],
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Container(
+
+
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10)
+                    ),
+                    child: Material(
+
+                      child: InkWell(
+                        highlightColor: Colors.blue.withOpacity(0.5),
+                        splashColor: Colors.yellow,
+
+                        onTap: (){
+                          print('You tapped on RaisedButton');
+                        },
+                        child: Row(
+                          children: [
+                            SizedBox(width: 20,),
+                            Text("Billboards Hot 100",style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 30
+                            ),)
+                          ],
+                        ),
                       ),
                     ),
                   ),
                 ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: InkWell(
-                      hoverColor: Color.alphaBlend( Color(0xFF3A5985),Color(0xff051046)),
-                      onTap: (){
-                        print('You tapped on RaisedButton');
-                      },
-                      child: Row(
-                        children: [
-                          Text("1", style: TextStyle(
-                              color: Colors.white54,
-                              fontSize: 30
-                          ),),
-                          SizedBox(width: 20,),
-                          Text("Billboards Hot 100",style: TextStyle(
-                              color: Colors.white54,
-                              fontSize: 30
-                          ),)
-                        ],
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Container(
+
+
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10)
+                    ),
+                    child: Material(
+
+                      child: InkWell(
+                        highlightColor: Colors.blue.withOpacity(0.5),
+                        splashColor: Colors.yellow,
+
+                        onTap: (){
+                          print('You tapped on RaisedButton');
+                        },
+                        child: Row(
+                          children: [
+                            SizedBox(width: 20,),
+                            Text("Billboards Hot 100",style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 30
+                            ),)
+                          ],
+                        ),
                       ),
                     ),
                   ),
                 ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: InkWell(
-                      hoverColor: Color.alphaBlend( Color(0xFF3A5985),Color(0xff051046)),
-                      onTap: (){
-                        print('You tapped on RaisedButton');
-                      },
-                      child: Row(
-                        children: [
-                          Text("1", style: TextStyle(
-                              color: Colors.white54,
-                              fontSize: 30
-                          ),),
-                          SizedBox(width: 20,),
-                          Text("Billboards Hot 100",style: TextStyle(
-                              color: Colors.white54,
-                              fontSize: 30
-                          ),)
-                        ],
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Container(
+
+
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10)
+                    ),
+                    child: Material(
+
+                      child: InkWell(
+                        highlightColor: Colors.blue.withOpacity(0.5),
+                        splashColor: Colors.yellow,
+
+                        onTap: (){
+                          print('You tapped on RaisedButton');
+                        },
+                        child: Row(
+                          children: [
+                            SizedBox(width: 20,),
+                            Text("Billboards Hot 100",style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 30
+                            ),)
+                          ],
+                        ),
                       ),
                     ),
                   ),
                 ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: InkWell(
-                      hoverColor: Color.alphaBlend( Color(0xFF3A5985),Color(0xff051046)),
-                      onTap: (){
-                        print('You tapped on RaisedButton');
-                      },
-                      child: Row(
-                        children: [
-                          Text("1", style: TextStyle(
-                              color: Colors.white54,
-                              fontSize: 30
-                          ),),
-                          SizedBox(width: 20,),
-                          Text("Billboards Hot 100",style: TextStyle(
-                              color: Colors.white54,
-                              fontSize: 30
-                          ),)
-                        ],
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Container(
+
+
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10)
+                    ),
+                    child: Material(
+
+                      child: InkWell(
+                        highlightColor: Colors.blue.withOpacity(0.5),
+                        splashColor: Colors.yellow,
+
+                        onTap: (){
+                          print('You tapped on RaisedButton');
+                        },
+                        child: Row(
+                          children: [
+                            SizedBox(width: 20,),
+                            Text("Billboards Hot 100",style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 30
+                            ),)
+                          ],
+                        ),
                       ),
                     ),
                   ),
                 ),
+
+
+
+
 
                 SizedBox(height: 10,)
 
