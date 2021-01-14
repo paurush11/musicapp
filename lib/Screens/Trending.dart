@@ -202,15 +202,16 @@ class _TrendingScreenState extends State<TrendingScreen> {
               children: [
                 Spacer(),
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(9.0),
                   child: Container(
 
 
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10)
+                      borderRadius: BorderRadius.circular(10),
+
                     ),
                     child: Material(
-
+                      color: Color.alphaBlend(Color(0xff072F5F), Color(0xff1261A0)),
                       child: InkWell(
                         highlightColor: Colors.blue.withOpacity(0.5),
                         splashColor: Colors.yellow,
@@ -222,7 +223,8 @@ class _TrendingScreenState extends State<TrendingScreen> {
                           children: [
                             SizedBox(width: 20,),
                             Text("Billboards Hot 100",style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.white,
+                                fontFamily: "ArchitectsDaughter",
                                 fontSize: 30
                             ),)
                           ],
@@ -232,15 +234,16 @@ class _TrendingScreenState extends State<TrendingScreen> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(9.0),
                   child: Container(
 
 
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10)
+                      borderRadius: BorderRadius.circular(10),
+
                     ),
                     child: Material(
-
+                      color: Color.alphaBlend(Color(0xff072F5F), Color(0xff1261A0)),
                       child: InkWell(
                         highlightColor: Colors.blue.withOpacity(0.5),
                         splashColor: Colors.yellow,
@@ -251,8 +254,9 @@ class _TrendingScreenState extends State<TrendingScreen> {
                         child: Row(
                           children: [
                             SizedBox(width: 20,),
-                            Text("Billboards Hot 100",style: TextStyle(
-                                color: Colors.black,
+                            Text("Uk Top 40",style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: "ArchitectsDaughter",
                                 fontSize: 30
                             ),)
                           ],
@@ -262,15 +266,16 @@ class _TrendingScreenState extends State<TrendingScreen> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(9.0),
                   child: Container(
 
 
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10)
+                      borderRadius: BorderRadius.circular(10),
+
                     ),
                     child: Material(
-
+                      color: Color.alphaBlend(Color(0xff072F5F), Color(0xff1261A0)),
                       child: InkWell(
                         highlightColor: Colors.blue.withOpacity(0.5),
                         splashColor: Colors.yellow,
@@ -281,8 +286,9 @@ class _TrendingScreenState extends State<TrendingScreen> {
                         child: Row(
                           children: [
                             SizedBox(width: 20,),
-                            Text("Billboards Hot 100",style: TextStyle(
-                                color: Colors.black,
+                            Text("US Top 40",style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: "ArchitectsDaughter",
                                 fontSize: 30
                             ),)
                           ],
@@ -292,15 +298,16 @@ class _TrendingScreenState extends State<TrendingScreen> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(9.0),
                   child: Container(
 
 
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10)
+                      borderRadius: BorderRadius.circular(10),
+
                     ),
                     child: Material(
-
+                      color: Color.alphaBlend(Color(0xff072F5F), Color(0xff1261A0)),
                       child: InkWell(
                         highlightColor: Colors.blue.withOpacity(0.5),
                         splashColor: Colors.yellow,
@@ -311,8 +318,9 @@ class _TrendingScreenState extends State<TrendingScreen> {
                         child: Row(
                           children: [
                             SizedBox(width: 20,),
-                            Text("Billboards Hot 100",style: TextStyle(
-                                color: Colors.black,
+                            Text("Youtube Trends",style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: "ArchitectsDaughter",
                                 fontSize: 30
                             ),)
                           ],
@@ -326,7 +334,8 @@ class _TrendingScreenState extends State<TrendingScreen> {
 
 
 
-                SizedBox(height: 10,)
+
+
 
 
 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hidden_drawer/Screens/Trending.dart';
 import 'package:hidden_drawer/Screens/drawerscreen.dart';
 import 'package:hidden_drawer/Screens/homescreen.dart';
+import 'package:hidden_drawer/Screens/auth.dart';
 
 void main(){
   runApp(MyApp());
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       routes: {
         Start.id : (context)=>Start(),
         TrendingScreen.id : (context)=>TrendingScreen(),
+        AuthScreen.id :(context)=>AuthScreen()
       },
     );
   }
@@ -28,8 +30,10 @@ class Start extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
+
           DrawerScreen(),
           HomeScreen(),
+          AuthScreen(),
 
         ],
       ),
