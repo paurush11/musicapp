@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "978048519298",
+    "project_id": "potify-753d0",
+    "storage_bucket": "potify-753d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978048519298:android:3ac88773d6dab3d9d9789b",
+        "android_client_info": {
+          "package_name": "com.paurush.hidden_drawer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978048519298-k25to6k6it4mmgib584egvmdnvps18mm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzvFDA07g8Liq9ps3vvJ_hnD1cslQ0ffg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978048519298-k25to6k6it4mmgib584egvmdnvps18mm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
